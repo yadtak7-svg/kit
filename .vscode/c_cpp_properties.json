@@ -1,26 +1,18 @@
 {
-  "version": 4,
-  "configurations": [
-    {
-      "name": "Linux",
-      "compilerPath": "/usr/bin/gcc",
-      "cStandard": "gnu17",
-      "cppStandard": "gnu++17",
-      "intelliSenseMode": "linux-gcc-x64",
-      "includePath": [
-        "${workspaceFolder}",
-        "${workspaceFolder}/header",
-        "${workspaceFolder}/lib"
-      ],
-      "browse": {
-        "path": [
-          "${workspaceFolder}",
-          "${workspaceFolder}/header",
-          "${workspaceFolder}/lib"
-        ],
-        "limitSymbolsToIncludedHeaders": true
-      },
-      "configurationProvider": "ms-vscode.cpptools"
-    }
-  ]
+    "version": 4,
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/header",
+                "${workspaceFolder}/lib"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ]
 }

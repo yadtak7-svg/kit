@@ -8,15 +8,11 @@
       "cppStandard": "gnu++17",
       "intelliSenseMode": "linux-gcc-x64",
       "includePath": [
-        "${workspaceFolder}/**",
-        "${workspaceFolder}/header",
-        "${workspaceFolder}/lib"
+        "${workspaceFolder}/**"
       ],
       "browse": {
         "path": [
-          "${workspaceFolder}",
-          "${workspaceFolder}/header",
-          "${workspaceFolder}/lib"
+          "${workspaceFolder}"
         ],
         "limitSymbolsToIncludedHeaders": true
       },
