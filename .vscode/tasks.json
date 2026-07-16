@@ -9,7 +9,12 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-I${workspaceFolder}/header",
+                "-L${workspaceFolder}/lib",
+                //ライブラリを入れる場合、"l + ファイル名前"
+                "-lcalc",
+                "-lclock"
             ],
             "options": {
                 "cwd": "${fileDirname}"
