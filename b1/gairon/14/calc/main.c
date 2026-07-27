@@ -30,6 +30,8 @@ int main(void) {
     add_operator("*", 3, multiple); /* 掛け算の演算子(*)を登録する */
     add_operator("/", 3, divide);   /* 割り算の演算子(/)を登録する */
     add_operator("%%", 3, mod);      /* 剰余の演算子(%)を登録する */
-    calculate();
+    while(1) {
+        calculate();
+    }
     return 0;
 }
