@@ -34,6 +34,7 @@ int main(void) {
 			if( ( month == fixholidays[j][0]) && ( i == fixholidays[j][1]) ) {
 				printf("*");
 				fflush(stdout);
+				break;
                                 
 			}
 		}

@@ -51,9 +51,11 @@ int main(void)
     printf("2026/%d/%d ", m, d);//共通の出力
     char vac[20];
     char sem[20]; 
+    int flag = 0;
 
     if(data < vac1 || (last1 < data && data <= vac2) || (first < data && data <= vac3) || (last2 < data)) {
         strcpy(vac, semesterstr[0]);
+        flag = 1;
     }
     if(last1 < data && data <= first) {
         strcpy(sem, semesterstr[1]);
@@ -62,7 +64,9 @@ int main(void)
     }
 
 
-    printf("is %s %s in KIT.\n",vac ,sem);
+    printf("is ");
+    if(flag) printf("%s of ", vac);
+    printf("%s in KIT.\n",sem);
 
     return 0;
 }
