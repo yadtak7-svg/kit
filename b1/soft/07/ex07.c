@@ -10,7 +10,7 @@ int main(void)
     fflush(stdout);
     scanf("%d", &n);
 
-    if(n < 0 || n > 20){
+    if(n < 1 || n > 20){
         printf("Input error.\n");
         return(-1);
     } else {
@@ -36,3 +36,4 @@ int fibonacci(int n)
         return (fn);
     }
 }
+
